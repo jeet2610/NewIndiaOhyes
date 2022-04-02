@@ -1,0 +1,37 @@
+.item {
+    backface-visibility: hidden; // Hack to prevent shaking in animation
+
+    @apply
+        relative
+        transform transition-transform;
+
+    &:hover {
+        @apply -translate-y-1;
+
+        &::after, &::before {
+            @apply scale-x-100;
+        }
+    }
+
+    &::after,
+    &::before {
+        content: '';
+        height: 2px;
+
+        @apply
+            absolute left-0
+            w-full
+            transform scale-x-0 transition-transform duration-300
+            bg-violet;
+    }
+
+    &::after {
+        @apply origin-left;
+        top: -7px;
+    }
+
+    &::before {
+        @apply origin-right;
+        bottom: -7px;
+    }
+}

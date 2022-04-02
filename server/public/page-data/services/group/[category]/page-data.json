@@ -1,0 +1,6 @@
+{
+    "componentChunkName": "component---src-pages-services-group-[category]-js",
+    "path": "/services/group/[category]/",
+    "result": {"pageContext":{"matchPath":"/services/group/:category"}},
+    "staticQueryHashes": [],
+    "matchPath": "/services/group/:category"}

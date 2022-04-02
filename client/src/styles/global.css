@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    @apply tab-land:text-tab-land phone:text-phone;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply
+        bg-violet
+        border-solid border-4 border-cream rounded-full;
+}
+
+input {
+    outline: none;
+    border: none;
+}
